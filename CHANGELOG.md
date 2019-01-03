@@ -8,4 +8,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-* tbd
+* Added: Connect-VMware function
+* Added: Open-VMwareVMConsole function

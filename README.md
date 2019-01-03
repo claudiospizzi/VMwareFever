@@ -17,7 +17,11 @@ VMware vSphere, e.g. connecting or remote management.
 
 ## Features
 
-tbd
+* **Connect-VMware**
+  Connect to the VMware vCenter.
+
+* **Open-VMwareVMConsole**
+  Open a VMware Console session to the target VM.
 
 
 ## Versions
