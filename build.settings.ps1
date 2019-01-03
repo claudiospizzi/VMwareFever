@@ -8,5 +8,5 @@ Properties {
 
     $GitHubEnabled  = $true
     $GitHubRepoName = 'claudiospizzi/VMwareFever'
-    $GitHubKey      = Use-VaultSecureString -TargetName 'GitHub Token (claudiospizzi)'
+    $GitHubToken    = Use-VaultSecureString -TargetName 'GitHub Token (claudiospizzi)'
 }
