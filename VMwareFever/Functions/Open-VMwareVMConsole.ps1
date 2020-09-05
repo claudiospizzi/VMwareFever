@@ -11,6 +11,8 @@
 #>
 function Open-VMwareVMConsole
 {
+    [CmdletBinding()]
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidGlobalVars', '')]
     param
     (
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
@@ -20,16 +22,18 @@ function Open-VMwareVMConsole
 
     begin
     {
-        $viServer = Connect-VMware
-
         $viServiceInstance = Get-View -Id 'ServiceInstance'
         $viSessionManager = Get-View -Id $viServiceInstance.Content.SessionManager
     }
 
     process
     {
+        # Define the vmrc:// url to the vm with a session token
+        $vmrcUri = 'vmrc://clone:{0}@{1}/?moid={2}' -f $viSessionManager.AcquireCloneTicket(), $Global:DefaultVIServer.Name, $vm.ExtensionData.MoRef.Value
+
+        Write-Verbose "Invoke $vmrcUri"
+
         # Open VMRC console
-        $vmrcUri = 'vmrc://clone:{0}@{1}/?moid={2}' -f $viSessionManager.AcquireCloneTicket(), $viServer.Name, $vm.ExtensionData.MoRef.Value
         Start-Process -FilePath $vmrcUri
     }
 }

@@ -1,19 +1,15 @@
 [![PowerShell Gallery - VMwareFever](https://img.shields.io/badge/PowerShell_Gallery-VMwareFever-0072C6.svg)](https://www.powershellgallery.com/packages/VMwareFever)
 [![GitHub - Release](https://img.shields.io/github/release/claudiospizzi/VMwareFever.svg)](https://github.com/claudiospizzi/VMwareFever/releases)
 [![AppVeyor - master](https://img.shields.io/appveyor/ci/claudiospizzi/VMwareFever/master.svg)](https://ci.appveyor.com/project/claudiospizzi/VMwareFever/branch/master)
-[![AppVeyor - dev](https://img.shields.io/appveyor/ci/claudiospizzi/VMwareFever/dev.svg)](https://ci.appveyor.com/project/claudiospizzi/VMwareFever/branch/dev)
-
 
 # VMwareFever PowerShell Module
 
 PowerShell Module with custom functions and cmdlets for VMware vSphere.
 
-
 ## Introduction
 
 This is a personal PowerShell Module by Claudio Spizzi. It is used to manage
 VMware vSphere, e.g. connecting or remote management.
-
 
 ## Features
 
@@ -23,12 +19,10 @@ VMware vSphere, e.g. connecting or remote management.
 * **Open-VMwareVMConsole**  
   Open a VMware Console session to the target VM.
 
-
 ## Versions
 
 Please find all versions in the [GitHub Releases] section and the release notes
 in the [CHANGELOG.md] file.
-
 
 ## Installation
 
@@ -46,7 +40,6 @@ manually on your local system:
 1. Download the latest release from GitHub as a ZIP file: [GitHub Releases]
 2. Extract the module and install it: [Installing a PowerShell Module]
 
-
 ## Requirements
 
 The following minimum requirements are necessary to use this module, or in other
@@ -54,7 +47,6 @@ words are used to test this module:
 
 * Windows PowerShell 5.1
 * Windows 10
-
 
 ## Contribute
 
@@ -64,8 +56,6 @@ Studio Code and ensure that the PowerShell extension is installed.
 
 * [Visual Studio Code] with the [PowerShell Extension]
 * [Pester], [PSScriptAnalyzer] and [psake] PowerShell Modules
-
-
 
 [PowerShell Gallery]: https://www.powershellgallery.com/packages/VMwareFever
 [GitHub Releases]: https://github.com/claudiospizzi/VMwareFever/releases
